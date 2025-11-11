@@ -16,7 +16,12 @@ public class Tessera {
     }
 
     
+    public void newTessera(){
 
+    }
 
+    public void ricTessPerPossesore(){
+        
+    }
 
 }
