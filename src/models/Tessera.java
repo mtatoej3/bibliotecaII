@@ -24,4 +24,9 @@ public class Tessera {
         
     }
 
+    public void setPossessoreTes(Cliente possessore){
+        this.possessore = possessore;
+    }
+
 }
+

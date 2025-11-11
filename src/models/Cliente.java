@@ -9,6 +9,7 @@ public class Cliente {
     private String id;
     private String nome;
     private List<Opera> titoliPresi = new ArrayList<>();
+    private Tessera tesPersonale;
     
     public Cliente(String id, String nome, List<Opera> titoliPresi) {
         this.id = id;
@@ -16,10 +17,12 @@ public class Cliente {
         this.titoliPresi = titoliPresi;
     }
 
-
-    
-
-
+    public Cliente(String id, String nome, List<Opera> titoliPresi, Tessera tesPersonale) {
+        this.id = id;
+        this.nome = nome;
+        this.titoliPresi = titoliPresi;
+        this.tesPersonale = tesPersonale;
+    }
 
 
 
@@ -44,7 +47,9 @@ public class Cliente {
     }
 
     
-
+    public void setPossessoreTes(Tessera tesPersonale){
+        this.tesPersonale = tesPersonale;
+    }
     
     
 
