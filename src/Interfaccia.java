@@ -12,15 +12,43 @@ public class Interfaccia {
     }
 
     Accreg log = new Accreg();
+    Biblioteca bib = new Biblioteca();
     
+
     public void start(){
+        primo();
+    }
+
+    public void primo(){
+
+        System.out.println(""" 
+            1) servizio
+            2) cliente
+        """);
+
+        int q = scanner.nextInt();
+
+        switch (q) {
+            case 1 -> {bib.servizio();}
+            case 2 -> {startCliente();}
+            default -> throw new AssertionError();
+        }
+
+
+
+    }
+
+
+    public void startCliente(){
         while (true){
             Cliente clienteNow = log.singUpIn(scanner);
             menuCliente(clienteNow);
         }
     }
 
+    public void menuCliente(Cliente clienteNow){
 
+    }
 
-
+        
 }

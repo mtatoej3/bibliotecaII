@@ -6,24 +6,11 @@ import dbs.DbTessera;
 
 public class Biblioteca {
     
-    DbTessera tesList = new DbTessera();
-    DbCliente cliList = new DbCliente();
 
-    public Cliente newCliente(){
-        int id = cliList.getListCliente().size() +1 ;
-        
+    //tutto questo va in accreg mo si toglie 
+    // da inizia spero la vera biblioteca 
 
-
-    }
-
-    public Tessera newTessera(){
-
-    }
-
-
-    public void clientTessera(Tessera tessera, Cliente cliente){
-        cliente.setPossessoreTes(tessera);
-        tessera.setPossessoreTes(cliente);
+    public void servizio(){
 
     }
 }

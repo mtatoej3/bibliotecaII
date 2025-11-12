@@ -15,7 +15,19 @@ public class Tessera {
         this.dataValidita = dataValidita;
     }
 
+
     
+
+    
+    public Tessera(String id, LocalDate dataValidita) {
+        this.id = id;
+        this.dataValidita = dataValidita;
+    }
+
+
+
+
+
     public void newTessera(){
 
     }
@@ -28,5 +40,32 @@ public class Tessera {
         this.possessore = possessore;
     }
 
+
+
+
+
+    public String getId() {
+        return id;
+    }
+
+
+
+
+
+    public Cliente getPossessore() {
+        return possessore;
+    }
+
+
+
+
+
+    public LocalDate getDataValidita() {
+        return dataValidita;
+    }
+
+
+
+    
 }
 
